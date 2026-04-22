@@ -1,0 +1,60 @@
+{
+  "name": "use-chat-on-chunk",
+  "version": "0.0.4",
+  "description": "Use chat chunker is a tool for use-chat hook by vercel in the ai package. It calls chunks on  ",
+  "keywords": [
+    "react",
+    "typescript",
+    "ai",
+    "use-chat",
+    "vercel"
+  ],
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "homepage": "https://github.com/kodril/",
+  "author": "Kodril <connect@kodril.com> (https://www.kodril.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodril/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "ai": "^6.0.168",
+    "jsdom": "^29.0.2",
+    "prettier": "^3.3.3",
+    "react": "^19.2.5",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vitest": "^4.1.4"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "ci": "npm run build && npm run check-exports && npm run lint && npm run test",
+    "lint": "tsc",
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "check-exports": "attw --pack .",
+    "local-release": "npm run ci && changeset version && changeset publish"
+  },
+  "dependencies": {
+    "@testing-library/react": "^16.3.2"
+  }
+}
