@@ -16,11 +16,11 @@
       "require": "./dist/index.cjs"
     }
   },
-  "homepage": "https://github.com/kodril/",
-  "author": "Kodril <connect@kodril.com> (https://www.kodril.com)",
+  "homepage": "https://github.com/s3kfm/use-chat-on-chunk",
+  "author": "s3kfm",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kodril/issues"
+    "url": "git@github.com:s3kfm/use-chat-on-chunk.git"
   },
   "license": "MIT",
   "files": [
