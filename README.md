@@ -3,7 +3,7 @@
 A lightweight, specialized React hook for the **Vercel AI SDK** that captures individual text deltas (chunks) as they stream.
 
 [![npm version](https://img.shields.io/npm/v/use-chat-on-chunk.svg)](https://www.npmjs.com/package/use-chat-on-chunk)
-[![license](https://img.shields.io/npm/l/use-chat-on-chunk.svg)](https://github.com/yourusername/use-chat-on-chunk)
+[![license](https://img.shields.io/npm/l/use-chat-on-chunk.svg)](https://github.com/s3kfm/use-chat-on-chunk)
 
 ## What it is & The Problem it Solves
 

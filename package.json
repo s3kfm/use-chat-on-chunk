@@ -1,6 +1,6 @@
 {
   "name": "use-chat-on-chunk",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Use chat chunker is a tool for use-chat hook by vercel in the ai package. It calls chunks on  ",
   "keywords": [
     "react",
@@ -28,6 +28,7 @@
   ],
   "type": "module",
   "devDependencies": {
+    "@testing-library/react": "^16.3.2",
     "@types/react": "^19.2.14",
     "ai": "^6.0.168",
     "jsdom": "^29.0.2",
@@ -52,9 +53,10 @@
     "test": "vitest run",
     "format": "prettier --write .",
     "check-exports": "attw --pack .",
-    "local-release": "npm run ci && changeset version && changeset publish"
+    "local-release": "npm run ci && changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
   },
   "dependencies": {
-    "@testing-library/react": "^16.3.2"
+    "attw": "^1.0.0"
   }
 }

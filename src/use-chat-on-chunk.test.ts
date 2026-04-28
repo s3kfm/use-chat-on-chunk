@@ -4,7 +4,7 @@ import type { UIMessage } from "ai";
 import { useChatOnChunk } from "./use-chat-on-chunk.js"; // Adjust your import path
 
 describe("useChatOnChunk (UIMessage format)", () => {
-  let onChunkMock: ReturnType<typeof vi.fn>;
+  let onChunkMock: (text: string) => void;
 
   beforeEach(() => {
     onChunkMock = vi.fn();
